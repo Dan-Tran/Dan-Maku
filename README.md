@@ -2,6 +2,10 @@
 
 A curtain fire shooting game inspired by the intense Japanese arcade shooters developed using Project FUN.
 
+## Downloads
+
+The game can be downloaded from the [Releases Section](https://github.com/Dan-Tran/Dan-Maku/releases/latest).
+
 ## License
 
    Copyright 2016 Dan Tran

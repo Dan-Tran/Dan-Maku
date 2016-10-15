@@ -1,0 +1,3 @@
+#define GAMEICON 107
+
+GAMEICON ICON "GameIcon.ico"

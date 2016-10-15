@@ -1,0 +1,35 @@
+	"c:\program files (x86)\microsoft sdks\windows\v7.0a\bin\rc.exe" /l 0x409 /fo".\Release\Tran_Dan_Maku.res" .\Tran_Dan_Maku.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl.exe @C:\Users\DanTr\AppData\Local\Temp\nmAD4B.tmp
+Tran_Dan_Maku_MainDeclarations.cpp
+Tran_Dan_Maku_BossClass.cpp
+Tran_Dan_Maku_Cutscene.cpp
+Tran_Dan_Maku_EnemyBullet.cpp
+Tran_Dan_Maku_EnemyClass.cpp
+Tran_Dan_Maku_EnemyClass_drv_0.cpp
+Tran_Dan_Maku_EnemyClass_drv_1.cpp
+Tran_Dan_Maku_ExitClass.cpp
+Tran_Dan_Maku_Instruction1.cpp
+Tran_Dan_Maku_Level1.cpp
+Tran_Dan_Maku_LoserLevel.cpp
+Tran_Dan_Maku_MainDeclarations.cpp
+Tran_Dan_Maku_MenuClass.cpp
+Tran_Dan_Maku_MyGame.cpp
+Tran_Dan_Maku_MyLevelFactory.cpp
+Tran_Dan_Maku_PlayerBullet.cpp
+Tran_Dan_Maku_PlayerClass.cpp
+Tran_Dan_Maku_PlayerClass.cpp(232) : warning C4305: '=' : truncation from '__int64' to 'int'
+Tran_Dan_Maku_PlayerClass.cpp(232) : warning C4309: '=' : truncation of constant value
+Tran_Dan_Maku_PlayerClass.cpp(359) : warning C4018: '>' : signed/unsigned mismatch
+Tran_Dan_Maku_PowerClass.cpp
+Tran_Dan_Maku_ScrollingBackground.cpp
+Tran_Dan_Maku_SpellCall1.cpp
+Tran_Dan_Maku_SpellClass1.cpp
+Tran_Dan_Maku_SpellClass2.cpp
+Tran_Dan_Maku_SpellClass3.cpp
+Tran_Dan_Maku_SpellClass4.cpp
+Tran_Dan_Maku_StartClass.cpp
+Tran_Dan_Maku_WinLevel.cpp
+	link.exe @C:\Users\DanTr\AppData\Local\Temp\nmE4B7.tmp

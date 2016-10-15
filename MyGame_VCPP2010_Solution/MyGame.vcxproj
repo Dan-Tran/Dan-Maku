@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{715B86A0-88D1-4006-B866-01C28E7D6302}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MyGame</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MyGame</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Lua-5.1.2;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\GUI;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\ProjectFun;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Engine;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Core;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Math;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Renderer;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\File3D;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\PAL;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Input;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DCollision;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DPhysics;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\OpenAL\Include;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\Sound Formats\Wave\Include;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\Sound Formats\Ogg\Include;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Network;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ProgramDataBaseFileName>.\vc100d.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+	<PrecompiledHeaderFile>MyGame_MainDeclarations.h</PrecompiledHeaderFile>
+
+    </ClCompile>
+    <Link>
+      <RegisterOutput>true</RegisterOutput>
+      <AdditionalDependencies>PF.LuaD.lib;PF.GUID.lib;opengl32.lib;glu32.lib;winmm.lib;Ws2_32.lib;pthreadVC2_2010d.lib;OpenAL32.lib;VorbisD.lib;VorbisFileD.lib;VorbisEncoderD.lib;OggD.lib;PF.ProjectFunD.lib;PF.CoreD.lib;PF.EngineD.lib;PF.PALD.lib;PF.MainD.lib;PF.RendererD.lib;PF.File3DD.lib;PF.MathD.lib;PF.InputD.lib;PF.2DCollisionD.lib;PF.2DPhysicsD.lib;PF.SoundD.lib;PF.NetworkD.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin\MyGame.exe</OutputFile>
+	<AdditionalLibraryDirectories>C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Lua-5.1.2;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\GUI;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\ProjectFun;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Main;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Engine;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Core;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Math;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Renderer;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\File3D;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\PAL;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\PThread;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Input;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DCollision;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DPhysics;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\OpenAL\Lib;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\Sound Formats\Ogg\Lib;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Network;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)MyGame.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Lua-5.1.2;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\GUI;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\ProjectFun;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Engine;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Core;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Math;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Renderer;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\File3D;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\PAL;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Input;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DCollision;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DPhysics;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\OpenAL\Include;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\Sound Formats\Wave\Include;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\Sound Formats\Ogg\Include;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Network;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>.\vc100.pdb</ProgramDataBaseFileName>
+	<PrecompiledHeaderFile>MyGame_MainDeclarations.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;shell32.lib;PF.Lua.lib;PF.GUI.lib;opengl32.lib;glu32.lib;winmm.lib;Ws2_32.lib;pthreadVC2_2010.lib;OpenAL32.lib;Vorbis.lib;VorbisFile.lib;VorbisEncoder.lib;Ogg.lib;PF.ProjectFun.lib;PF.Core.lib;PF.Engine.lib;PF.PAL.lib;PF.Main.lib;PF.Renderer.lib;PF.Math.lib;PF.File3D.lib;PF.Input.lib;PF.2DCollision.lib;PF.2DPhysics.lib;PF.Sound.lib;PF.Network.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>Bin\MyGame.exe</OutputFile>
+	<AdditionalLibraryDirectories>C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Lua-5.1.2;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\GUI;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\ProjectFun;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Main;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Engine;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Core;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Math;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Renderer;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\File3D;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\PAL;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\PThread;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Input;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DCollision;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\2DPhysics;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\OpenAL\Lib;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Sound\Sound Formats\Ogg\Lib;C:\Program Files\DigiPen\ProjectFUN2.1.83\ProjectFUNEngine\ProjectFUNEngine2010Express\Network;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+    <ItemGroup>
+    <None Include="GameIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyGame.rc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="MyGame_MainDeclarations.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+<ClCompile Include="MyGame_PlayerClass.cpp" />
+<ClCompile Include="MyGame_PlayerBullet.cpp" />
+<ClCompile Include="MyGame_EnemyClass.cpp" />
+<ClCompile Include="MyGame_MyGame.cpp" />
+<ClCompile Include="MyGame_Level1.cpp" />
+<ClCompile Include="MyGame_MyLevelFactory.cpp" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude  Include="MyGame_PlayerClass.h" />
+<ClInclude  Include="MyGame_PlayerBullet.h" />
+<ClInclude  Include="MyGame_EnemyClass.h" />
+<ClInclude  Include="MyGame_Level1.h" />
+<ClInclude  Include="MyGame_Declarations.h" />
+<ClInclude  Include="MyGame_MainDeclarations.h" />
+<ClInclude  Include="MyGame_MyGame.h" />
+<ClInclude  Include="MyGame_MyLevelFactory.h" />
+
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,6 +1,6 @@
 # Dan Maku
 
-A [curtain fire shooting game](https://en.wikipedia.org/wiki/Shoot_'em_up) inspired by intense Japanese arcade shooters, developed using [Project FUN](https://myprojectfun.digipen.edu/mw/ProjectFUN_Editor).
+A [curtain fire shooting game](https://en.wikipedia.org/wiki/Shoot_'em_up) inspired by intense Japanese arcade shooters, developed using [Project FUN](https://myprojectfun.digipen.edu/mw/ProjectFUN_Editor). This was a project done during high school as a learning experience for game design and programming in general.
 
 ## Downloads
 
